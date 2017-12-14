@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="../static/profile.css">
+</head>
+<body>
+  <div class="home">
+    <a href="/">Soundsave</a>
+  </div>
+  <h1 class="header">Profile</h1>
+  <div class="phone">
+    <form action="/save_phone_number">
+      Your Account ID (do not modify):
+      <input type="text" name="account_id" value={{account_id}}><br>
+      Phone number:
+      {% if phone_number %}
+        <input type="text" name="number" value={{phone_number}}><br><br>
+      {% else %}
+        <input type="text" name="number" placeholder="ex. 3015557856"><br><br>
+      {% endif %}
+      <input type="submit" value="Save">
+    </form>
+    {% if saved %}
+      <p>Phone number saved! You may now text the number 571-393-2095 to begin
+         using our service!</p>
+    {% endif %}
+    {% if error %}
+      <p>Error saving phone number. Please enter a non-empty phone number with
+        no spaces or dashes.
+    {% endif %}
+  </div>
+</body>
+</html>

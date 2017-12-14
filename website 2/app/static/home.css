@@ -1,0 +1,26 @@
+body {
+  background-color: #F5A623
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Montserrat;
+  font-weight: lighter;
+  font-size: 60px;
+  padding-top: 5%;
+}
+
+div {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-family: Lato;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+a {
+  color: white;
+}
